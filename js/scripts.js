@@ -1,3 +1,1 @@
-alert('Hello world');
-let favoriteFood= 'Shawrma';
-document.write(favoriteFood);
+let pokemonList=[{name:"Pikachu", type:"Electric", height:0.4}, {name:"Jigglypuff", type:["fairy","normal"], height: 0.5}, {name:"Bulbasaur", type:["grass", "poison"], height:0.7} ]
