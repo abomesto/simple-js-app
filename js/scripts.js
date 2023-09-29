@@ -24,7 +24,7 @@ let pokemonList= [
 let thresholdHeight = 1.5;
 
 // Iterate over each Pokémon object in the pokemonList array
-for (let i = 0; i < pokemonList.length; i++) {
+/* for (let i = 0; i < pokemonList.length; i++) {
     // Get the name and height of the Pokémon
     let pokemonName = pokemonList[i].name;
     let pokemonHeight = pokemonList[i].height;
@@ -39,7 +39,17 @@ for (let i = 0; i < pokemonList.length; i++) {
     
     // Write the Pokémon name, height, and label to the DOM
     document.write(`${pokemonName} (height: ${pokemonHeight}${label})<br>`);
-}
-     
+} */
+
+pokemonList.forEach((pokemon,index)=> {
+    let label = '';
+    
+    if (pokemon.height > thresholdHeight) {
         
+        label = " - Wow that's a big pokemon!";
+    }
+    document.write(`${pokemon.name}, ${pokemon.height}, ${pokemon.type}, ${label}<br>`)
+})
+
+
         
