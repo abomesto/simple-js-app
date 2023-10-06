@@ -1,4 +1,5 @@
 // pokemon objects
+let pokemonRepository = (function() {
 let pokemonList= [  
 
     { 
@@ -20,6 +21,23 @@ let pokemonList= [
     }
     
 ];
+
+function add(pokemon) {
+    pokemonList.push(pokemon);
+}
+
+function getAll() {
+ return pokemonList;
+}
+
+return{
+    add: add,
+    getAll: getAll
+};
+
+})();
+console.log(pokemonRepository.getAll())
+
 // Add Threshold value of Pokemon Height
 let thresholdHeight = 1.5;
 
@@ -41,7 +59,7 @@ let thresholdHeight = 1.5;
     document.write(`${pokemonName} (height: ${pokemonHeight}${label})<br>`);
 } */
 
-pokemonList.forEach((pokemon,index)=> {
+pokemonRepository.getAll().forEach((pokemon,index)=> {
     let label = '';
     
     if (pokemon.height > thresholdHeight) {
