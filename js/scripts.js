@@ -1,4 +1,4 @@
-// pokemon objects
+//pokemon objects
 let pokemonRepository = (function() {
 let pokemonList= [  
 
@@ -39,13 +39,15 @@ function addListItem(pokemon){
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
     button.addEventListener('click', function() {
-        showDetails(pokemon.type,pokemon.height);
+        showDetails(pokemon.name);
     });
   }
 
   function showDetails(pokemon){
     console.log(pokemon) ;
+    
 }
+
 return{
     add: add,
     getAll: getAll,
