@@ -17,6 +17,9 @@
   }
   body {
     font-family: Arial, sans-serif;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
   }
   #modal-container {
     position: fixed;
@@ -43,11 +46,13 @@
     margin: auto;
     display: inline-block;
     box-sizing: border-box;
-    background: #fff;
+    background: #b0e92c;
     padding: 15px;
     width: 100%;
     max-width: 700px;
-    text-align: left;
+    text-align: center;
+    text-transform: uppercase
+    
   }
   
   .modal-close {
@@ -75,3 +80,4 @@
     /* CSS for modal container - add your own desired CSS styles here */
     display: block;
   }
+  
