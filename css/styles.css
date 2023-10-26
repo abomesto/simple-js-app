@@ -14,14 +14,17 @@
     background-color: white;
     color: black;
     border: 2px solid #4caf50;
+    text-transform: capitalize
+
   }
   body {
+    background-color: #4caf50;
     font-family: Arial, sans-serif;
     align-items: center;
     text-align: center;
     text-transform: capitalize;
   }
-  #modal-container {
+  /* #modal-container {
     position: fixed;
     padding: 20px;
     box-sizing: border-box;
@@ -40,9 +43,9 @@
     /* this is used to center the modal */
     display: grid;
     text-align: center;
-  }
+  } */
   
-  .modal {
+  /* .modal {
     margin: auto;
     display: inline-block;
     box-sizing: border-box;
@@ -51,7 +54,7 @@
     width: 100%;
     max-width: 700px;
     text-align: center;
-    text-transform: uppercase
+    text-transform: capitalize
     
   }
   
@@ -79,5 +82,10 @@
   #modal-container.is-visible {
     /* CSS for modal container - add your own desired CSS styles here */
     display: block;
+  } */
+
+
+  .btn-primary{
+    background-color: #4caf50;
+    text-transform: capitalize
   }
-  
