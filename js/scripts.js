@@ -70,7 +70,7 @@ let pokemonRepository = (function () {
  // });
 
   function addListItem(pokemon) {
-    let pokemonList = document.querySelector(".row");
+    let pokemonList = document.querySelector(".pokemon-list");
     let listItemPokemon = document.createElement("li");
     listItemPokemon.classList.add("list-group-item");
     listItemPokemon.classList.add('col-12'); 
@@ -184,6 +184,19 @@ let pokemonRepository = (function () {
     showModal: showModal
   };
 })();
+
+const searchInpt = document.getElementById("searchInp");
+searchInpt.addEventListener("input", (e) => {
+  const keyword = e.target.value;
+  const pList = [...document.querySelectorAll(".list-group-item")];
+  pList.forEach(li => {
+    if (li.innerText.toLowerCase().includes(keyword.toLowerCase())) {
+      li.style.display = 'block';
+    } else {
+      li.style.display = 'none';
+    }
+  })
+});
 
 pokemonRepository.loadList().then(function() {
   // Now the data is loaded
