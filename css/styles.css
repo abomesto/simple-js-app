@@ -30,9 +30,7 @@
     text-transform: capitalize
   }
 
-  .navbar {
-    background-color: rgb(255, 255, 255);
-  }
-  .navbar-brand img {
+  .navbar-brand 
+   img {
     width: 100px;
   }
