@@ -10,7 +10,7 @@ It is a small web application in HTML, CSS, and JavaScript that loads data from 
 
 ## Technologies used in the project
 
--HTML, CSS
--JavaScript
--jQuery
--Bootstrap
+- HTML, CSS
+- JavaScript
+- jQuery
+- Bootstrap
